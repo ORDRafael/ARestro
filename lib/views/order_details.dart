@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:restaurante/config/routes/routes.dart';
-import 'package:restaurante/config/utils/my_colors.dart';
+import 'package:restaurante/routes/routes.dart';
+import 'package:restaurante/utils/my_colors.dart';
 
 class OrderDetails extends StatelessWidget {
   const OrderDetails({super.key});

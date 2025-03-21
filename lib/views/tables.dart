@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 
 class Tables extends StatelessWidget {
+  const Tables({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
@@ -17,6 +19,8 @@ class Tables extends StatelessWidget {
 }
 
 class SeatingArrangement extends StatelessWidget {
+  const SeatingArrangement({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -51,7 +55,7 @@ class SeatingArrangement extends StatelessWidget {
       ),
       child: Text(
         "$number",
-        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+        style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
       ),
     );
   }
@@ -67,7 +71,7 @@ class SeatingArrangement extends StatelessWidget {
       ),
       child: Text(
         "$number",
-        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
       ),
     );
   }
@@ -83,7 +87,7 @@ class SeatingArrangement extends StatelessWidget {
       ),
       child: Text(
         "$number",
-        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
+        style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
       ),
     );
   }

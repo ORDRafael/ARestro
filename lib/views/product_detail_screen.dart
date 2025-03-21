@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:restaurante/config/routes/routes.dart';
-import 'package:restaurante/config/utils/my_colors.dart';
+import 'package:restaurante/routes/routes.dart';
+import 'package:restaurante/utils/my_colors.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   final String title;
@@ -89,7 +89,7 @@ class ProductDetailScreen extends StatelessWidget {
                       SizedBox(height: size.height * 0.01), // Espacio entre los textos
                       const Row(
                         children: [
-                          Icon(Icons.star_half_rounded, color: const Color.fromARGB(255, 235, 214, 25)), // Icono de estrella
+                          Icon(Icons.star_half_rounded, color:  Color.fromARGB(255, 235, 214, 25)), // Icono de estrella
                           Text('4.5', style: TextStyle(color: Colors.grey)), // Calificación
                           Spacer(),
                           Icon(Icons.shopify_outlined, color: MyColors.primary), // Punto

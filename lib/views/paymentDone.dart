@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:restaurante/config/routes/routes.dart';
-import 'package:restaurante/config/utils/my_colors.dart';
+import 'package:restaurante/routes/routes.dart';
+import 'package:restaurante/utils/my_colors.dart';
 
 class Paymentdone extends StatelessWidget {
   const Paymentdone({super.key});
@@ -60,11 +60,11 @@ class Paymentdone extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10),
                           ),
                         ),
-                        backgroundColor: WidgetStatePropertyAll(MyColors.primary),
+                        backgroundColor: const WidgetStatePropertyAll(MyColors.primary),
                         
                       ),
                       onPressed: (){
-                        Navigator.of(context).pushNamedAndRemoveUntil(AppRoutes.home, (route) => false);
+                        Navigator.of(context).pushNamedAndRemoveUntil(AppRoutes.mainScreen, (route) => false);
                       },  
                       child: const Text('Enviar', style: TextStyle(color: Colors.white),
                       ),
@@ -76,17 +76,17 @@ class Paymentdone extends StatelessWidget {
                     height: size.height * 0.06,
                     child: ElevatedButton(
                       style: ButtonStyle(
-                        side: WidgetStatePropertyAll(BorderSide(color: MyColors.primary)),
+                        side: const WidgetStatePropertyAll(BorderSide(color: MyColors.primary)),
                         shape: WidgetStatePropertyAll<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ),
                         ),
-                        backgroundColor: WidgetStatePropertyAll(Colors.white),
+                        backgroundColor: const WidgetStatePropertyAll(Colors.white),
                         
                       ),
                       onPressed: (){
-                        Navigator.of(context).pushNamedAndRemoveUntil(AppRoutes.home, (route) => false);
+                        Navigator.of(context).pushNamedAndRemoveUntil(AppRoutes.mainScreen, (route) => false);
                       }, 
                       child: const Text('Saltar', style: TextStyle(color: Colors.black),
                       ),

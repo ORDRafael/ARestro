@@ -1,8 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:restaurante/config/routes/routes.dart';
-import 'package:restaurante/config/utils/my_colors.dart';
-import 'package:restaurante/views/principal/product_detail_screen.dart';
+import 'package:restaurante/routes/routes.dart';
+import 'package:restaurante/utils/my_colors.dart';
+import 'package:restaurante/views/product_detail_screen.dart';
 import 'package:restaurante/widgets/food_list_items.dart';
 
 class RestaurantDetails extends StatelessWidget {

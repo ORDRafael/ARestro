@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:restaurante/config/utils/my_colors.dart';
+import 'package:restaurante/utils/my_colors.dart';
 
 class SearchScreen extends StatelessWidget {
+  const SearchScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;

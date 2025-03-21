@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restaurante/config/utils/my_colors.dart';
+import 'package:restaurante/utils/my_colors.dart';
 
 class ListItem extends StatelessWidget {
 

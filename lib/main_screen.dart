@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:restaurante/config/routes/routes.dart';
-import 'package:restaurante/config/utils/my_colors.dart';
-import 'package:restaurante/views/principal/home.dart';
-import 'package:restaurante/views/principal/order_details.dart';
-import 'package:restaurante/views/principal/search.dart';
+import 'package:restaurante/routes/routes.dart';
+import 'package:restaurante/utils/my_colors.dart';
+import 'package:restaurante/views/home.dart';
+import 'package:restaurante/views/order_details.dart';
+import 'package:restaurante/views/search.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -17,9 +17,9 @@ class _MainScreenState extends State<MainScreen> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   
   final screens = [
-    HomeScreen(),
-    SearchScreen(),
-    OrderDetails(),
+    const HomeScreen(),
+    const SearchScreen(),
+    const OrderDetails(),
   ];
   
   int _selectedIndex = 0;
@@ -56,7 +56,7 @@ class _MainScreenState extends State<MainScreen> {
                 },
               ),
                ListTile(
-                title: Text('Ayuda y soporte'),
+                title: const Text('Ayuda y soporte'),
                 onTap: (){
                   Navigator.of(context).pushNamed('/helpAndSupport');
                 },

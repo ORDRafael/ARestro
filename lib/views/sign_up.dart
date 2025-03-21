@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:restaurante/config/routes/routes.dart';
-import 'package:restaurante/config/utils/my_colors.dart';
+import 'package:restaurante/routes/routes.dart';
+import 'package:restaurante/utils/my_colors.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -134,7 +134,7 @@ class _SignUpState extends State<SignUp> {
                       height: size.height * 0.06,
                       child: ElevatedButton(
                         onPressed: (){
-                          Navigator.pushReplacementNamed(context, AppRoutes.home);
+                          Navigator.pushReplacementNamed(context, AppRoutes.mainScreen);
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: MyColors.primary,

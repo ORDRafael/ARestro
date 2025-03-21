@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:restaurante/config/routes/routes.dart';
+import 'package:restaurante/routes/routes.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
